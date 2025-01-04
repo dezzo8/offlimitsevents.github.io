@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Off Limits, Events, after party, burlington, vermont, art, what to do, graphics, design, visual">
+        <meta name="description" content="A place to experience and music that's something totally new.">
+        <meta name="author" content="Nate Hicks">
 	<title>Off Limits Events</title>
 
 	<!-- MY CSS -->
@@ -23,22 +26,40 @@
 
 	<!-- VENDOR JS -->
 	<script type="text/javascript" src="vendors/js/materialize.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="vendors/js/typed.js" ></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 	<script>
 	 // use a script tag or an external JS file
 	 document.addEventListener("DOMContentLoaded", (event) => {
 	  gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,TextPlugin)
-	  gsap.to({"#title"}, {opacity:0})
-	  gsap.to({"#title"}, {opacity:1, duration:1, ease: "sine.inOut", delay:0})
 	 });
 
 	</script>
 
 </head>
 <body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('.tooltipped').tooltip();
+
+    /*ANIMATION SETS*/
+        /*HOME PAGE*/
+        var isMobile = false;
+        gsap.set("#title", {opacity:0})
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	        isMobile = true;
+
+	        } else {
+	        isMobile = false;
+	        	gsap.to("#title", {opacity:1, duration:1, ease:"sine.inOut"})
+	        };
+	</script>
+        
 <h1 id="title">OFF GIBLITS</h1>
 </body>
 </html>
