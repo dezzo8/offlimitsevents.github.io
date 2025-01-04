@@ -31,8 +31,8 @@
 	 // use a script tag or an external JS file
 	 document.addEventListener("DOMContentLoaded", (event) => {
 	  gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,TextPlugin)
-	  gsap.set({title}, {opacity:0})
-	  gsap.to({title}, {opacity:1, duration:1, ease: "sine.inOut"})
+	  gsap.to({"#title"}, {opacity:0})
+	  gsap.to({"#title"}, {opacity:1, duration:1, ease: "sine.inOut", delay:0})
 	 });
 
 	</script>
