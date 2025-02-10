@@ -3,21 +3,27 @@ margin: 0;
 height: 100%;
 overflow: hidden;
 }
+
 #myVideo {
 position: absolute;
 right: 0;
-bottom: 0;
+top: 0;
 min-width: 100%;
 min-height: 100%;
 width: auto;
 height: auto;
 }
+
 .content {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-color: white; /* Ensure text is readable */
 text-align:
 center;
 z-index: 1; }
+
+.bigText {
+	font-family: Montserrat, sans-serif;
+	font-size: 80px;
+}
