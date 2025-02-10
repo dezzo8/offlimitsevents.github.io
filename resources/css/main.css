@@ -6,7 +6,7 @@ overflow: hidden;
 
 #myVideo {
 position: absolute;
-right: 0;
+right: -50px;
 top: 0;
 min-width: 100%;
 min-height: 100%;
