@@ -40,7 +40,8 @@ left: 50%;
 transform: translate(-50%, -50%);
 text-align:center;
 color: white;
-z-index: 1; }
+z-index: 1;
+}
 .bigText {
 font-family: Montserrat, sans-serif;
 font-weight: bold;
