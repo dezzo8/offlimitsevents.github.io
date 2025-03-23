@@ -52,16 +52,26 @@
         <script src="resources/js/script.js" ></script>
         <script src="vendors/js/blotter.min.js"></script>
         <script src="vendors/js/channelSplitMaterial.js"></script>
-        <script src="vendors/js/liquidDistortMaterial.js"></script>
-        <script src="vendors/js/rollingDistortMaterial.js"></script>
         <script src="vendors/js/slidingDoorMaterial.js"></script>
         <script src="vendors/js/materialize.js" ></script>
         <script src="vendors/js/jquery.waypoints.min.js" ></script>
         <script src="vendors/js/init.js" ></script>
+        <script src="vendors/js/grained.js"></script>
+        <script>
+            var options = {
+              "animate": true,
+              "patternWidth": 500,
+              "patternHeight": 10,
+              "grainOpacity": 0.2,
+              "grainDensity": 5,
+              "grainWidth": 1,
+              "grainHeight": 1
+            }
+        </script>
         <script>
         document.addEventListener('DOMContentLoaded', function() {
 
-        
+        grained("#container", options)
 
         const nav = document.querySelector('#nav-mobile');
         const navCloseElement = document.querySelector('.sidenav-close');
@@ -301,14 +311,15 @@
         });
         });
         </script>
+        <div id="container" style="position: absolute; width: 100%; height: 5000px;"></div>
         <header>
             <nav class="transparent z-depth-0 pinned menu" data-target="menu">
                 <div class="nav-wrapper container">
                     <ul id="nav-mobile" class="sidenav">
-                        <li><a href="#home" class="home-button">HOME</a></li>
-                        <li><a href="#about" class="about-button">ABOUT</a></li>
-                        <li><a href="#work" class="work-button">WORK</a></li>
-                        <li><a href="#contact" class="hire-button">HIRE ME</a></li>
+                        <li><a href="#home" class="home-button">Home</a></li>
+                        <li><a href="#about" class="about-button">About</a></li>
+                        <li><a href="#work" class="work-button">Work</a></li>
+                        <li><a href="#contact" class="hire-button">Contact</a></li>
                     </ul>
                     <a href="javascript:;" data-target="nav-mobile" class="sidenav-trigger">
                         <i class="material-icons" id="hamburgerIcon">menu</i>
@@ -350,30 +361,30 @@
                     <div class="row">
                         <div class="col s12 m3">
                             <div class="icon-block skill-icons">
-                                <h2 class="center icon-big"><i class="material-icons">mouse</i></h2>
-                                <h3 class="center skill-title">Projection Mapping</h3>
-                                <p></p>
+                                <h2 class="center icon-big"><i class="material-icons">domain_disabled</i></h2>
+                                <h3 class="center skill-title">Projection</h3>
+                                <p>Using light, motion, and digital art, we turn walls, floors, and objects into living breathing cavases. Step inside and watch reality shift right before your eyes.</p>
                             </div>
                         </div>
                         <div class="col s12 m3">
                             <div class="icon-block skill-icons">
-                                <h2 class="center icon-big"><i class="material-icons">code</i></h2>
+                                <h2 class="center icon-big"><i class="material-icons">equalizer</i></h2>
                                 <h3 class="center skill-title">Sound Design</h3>
-                                <p>With a healthy balance of design aesthetic and bulletproof code, anything is possible. I'm proficient in HTML5, CSS3, and jQuery. I'm always willing to learn more!</p>
+                                <p>Blending art and music backgrounds, we tailor sound and atmosphere to fit each setting. Whether it's calming ambience, or epic washes of noise, you will feel fully immersed.</p>
                             </div>
                         </div>
                         <div class="col s12 m3">
                             <div class="icon-block skill-icons">
-                                <h2 class="center icon-big"><i class="material-icons">phone_iphone</i></h2>
+                                <h2 class="center icon-big"><i class="material-icons">settings_accessibility</i></h2>
                                 <h3 class="center skill-title">Interaction</h3>
-                                <p>Looking to layout a stellar experience through user research and intuitive interface design? I've got you covered. Sketches, wireframes, protoypes, and more.</p>
+                                <p>Utilizing the newest tech, we excel at adding interactivty to almost any system. Gestures, body movement, and hand tracking can all be used.</p>
                             </div>
                         </div>
                         <div class="col s12 m3">
                             <div class="icon-block skill-icons">
-                                <h2 class="center icon-big"><i class="material-icons">create</i></h2>
+                                <h2 class="center icon-big"><i class="material-icons">music_video</i></h2>
                                 <h3 class="center skill-title">Audiovisuals</h3>
-                                <p>It's always important to stick to your roots. With a background in drawing and fine arts, I can guarantee a beautiful outcome in every situation.</p>
+                                <p>For more music focused installations, we also offer audio reactivity, allowing for audio frequency separation to pick up on lows, mids, and highs.</p>
                             </div>
                         </div>
                     </div>
@@ -457,19 +468,14 @@
                 </div>
             </div>
         </section>
-        <footer class="page-footer blue-grey darken-4">
+        <footer class="page-footer black">
             <div class="container">
                 <div class="row">
                     <div class="col l3 s12">
                         <h5 class="white-text">Connect</h5>
                         <ul>
                             <li><a class="white-text" href="https://www.facebook.com/nate.hicks" target="_blank">Facebook</a></li>
-                            <li><a class="white-text" href="https://www.linkedin.com/in/nate-hicks-a3196422/" target="_blank">LinkedIn</a></li>
-                            <li><a class="white-text" href="https://dribbble.com/nhicksdesign" target="_blank">Dribbble</a></li>
-                            <li><a class="white-text" href="https://github.com/nhicksdesign" target="_blank">Github</a></li>
-                            <li><a class="white-text" href="https://open.spotify.com/artist/0aQFiDkH1ofWOcuzXlr4wI?si=Bif510XpSP6SAoakjB6TZw" target="_blank">Spotify</a></li>
-                            <li><a class="white-text" href="https://soundcloud.com/user-565343076" target="_blank">SoundCloud</a></li>
-                            <li><a class="white-text" href="https://silencecastor.bandcamp.com/" target="_blank">BandCamp</a></li>
+                            <li><a class="white-text" href="https://www.instagram.com/offlimits_events/" target="_blank">Instagram</a></li>
                         </ul>
                     </div>
                 </div>

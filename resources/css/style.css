@@ -224,7 +224,7 @@ nav .sidenav-trigger,
 nav .sidenav-close {
     float: right !important;
     margin-top: 50px;
-
+    color: black;
     cursor: pointer;
 }
 
