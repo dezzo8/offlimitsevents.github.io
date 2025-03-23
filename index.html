@@ -1,73 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="Off Limits, Events, after party, burlington, vermont, art, what to do, graphics, design, visual, projection, inspiration, museum">
-		<meta name="description" content="A place to experience and music that's something totally new.">
-		<meta name="author" content="Nate Hicks">
-		<title>Off Limits Events</title>
-		<!-- MY CSS -->
-		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
-		<link rel="apple-touch-icon" sizes="180x180" href="resources/img/apple-touch-icon.png">
-		<link rel="android-chrome-icon" type="image/png" sizes="192x192" href="resources/img/android-chrome-192x192.png">
-		<link rel="android-chrome-icon" type="image/png" sizes="512x512" href="resources/img/android-chrome-512x512.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon-16x16.png">
-		<!-- VENDOR CSS -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="vendors/css/materialize.css"  media="screen,projection"/>
-		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<!-- MY JS -->
-		<script type="text/javascript" src="resources/js/script.js"></script>
-		<!-- VENDOR JS -->
-		<script type="text/javascript" src="vendors/js/materialize.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-		<script>
-		// use a script tag or an external JS file
-		document.addEventListener("DOMContentLoaded", (event) => {
-		gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,TextPlugin)
-		});
-		</script>
-	</head>
-	<body>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-		<script>
-		$(document).ready(function() {
-		/*ANIMATION SETS*/
-		/*HOME PAGE*/
-		var isMobile = false;
-		gsap.set(title, {opacity:0})
-		if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			isMobile = true;
-			} else {
-			isMobile = false;
-				gsap.to(title, {opacity:1, duration:1, ease:"sine.inOut", delay:0.5})
-			}});
-		</script>
-		<header>
-		</header>
-		<!--HOME PAGE-->
-		<div class="section no-pad-bot" id="index-banner">
-			<div class="container">
-				<div class="col s12 center-align">
-					<video autoplay muted loop id="myVideo">
-						<source src="resources/vid/siteIntro.mp4" type="video/mp4">
-					</video>
-					<div class="content">
-						<h1 class="bigText" id="title">OFF LIMITS</h1>
-						<p class="smallText">But you're still invited.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Off Limits, events, visuals, interactive, design, art, escape room, experience, gallery, kinect, touchdesigner, resolume, digital">
+        <meta name="description" content="Off Limits is a creative agency specializing in interactive visual experiences that blur the lines between the senses.">
+        <meta name="author" content="Nate Hicks">
+        <title>Off Limits Events</title>
+        <!-- MY CSS -->
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="resources/img/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="resources/img/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="resources/img/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="resources/img/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="resources/img/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="resources/img/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="resources/img/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="resources/img/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/img/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="resources/img/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon-16x16.png">
+        <!-- VENDOR CSS  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="vendors/css/materialize.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="vendors/css/ionicons.min.css" type="text/css" rel="stylesheet" />
+        <link href="vendors/css/style.css" type="text/css" rel="stylesheet" media="screen" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- VENDOR JS -->
+        <script>
+        (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-69795299-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="resources/js/script.js" ></script>
+        <script src="vendors/js/blotter.min.js"></script>
+        <script src="vendors/js/channelSplitMaterial.js"></script>
+        <script src="vendors/js/liquidDistortMaterial.js"></script>
+        <script src="vendors/js/rollingDistortMaterial.js"></script>
+        <script src="vendors/js/slidingDoorMaterial.js"></script>
+        <script src="vendors/js/materialize.js" ></script>
+        <script src="vendors/js/jquery.waypoints.min.js" ></script>
+        <script src="vendors/js/init.js" ></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+        
+
+        const nav = document.querySelector('#nav-mobile');
+        const navCloseElement = document.querySelector('.sidenav-close');
+
+        let navCloneElement = navCloseElement.cloneNode(true);
+        navCloneElement.style.display = 'none';
+        navCloneElement.querySelector('#closeIcon').remove();
+        nav.insertAdjacentElement('beforeEnd',navCloneElement);
+
+        navCloseElement.addEventListener('click', () => {
+        navCloneElement.click();
+        });
+        });
+        </script>
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script>
+        $(document).ready(function() {
+        $('.tooltipped').tooltip();
+
+        /*ANIMATION SETS*/
+        /*HOME PAGE*/
+        var mainLogo = $("#logo-container");
+        var isMobile = false;
+        TweenMax.set(closeIcon, {autoAlpha:0})
+        if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        isMobile = true;
+        mainLogo.mouseover(function(){
+        TweenMax.to(mainLogo, 0, {y:0})
+        });
+        mainLogo.mouseout(function(){
+        TweenMax.to(mainLogo, 0, {y:0})
+        });
+        } else {
+        isMobile = false;
+        mainLogo.mouseover(function(){
+        TweenMax.to(mainLogo, 0.25, {y:-10, ease:Sine.easeInOut})
+        });
+        mainLogo.mouseout(function(){
+        TweenMax.to(mainLogo, 0.25, {y:0, ease:Sine.easeInOut})
+        });
+        TweenMax.set(".navIntro", {
+        x: -10,
+        autoAlpha: 0
+        });
+        TweenMax.set(".hero-text-box", {
+        autoAlpha: 0
+        });
+        TweenMax.set("#logo-container", {
+        y: 10,
+        autoAlpha: 0,
+        opacity: 0
+        });
+        TweenMax.to("#logo-container", 0.25, {
+        y: 0,
+        autoAlpha: 1,
+        ease: Sine.easeInOut,
+        delay: 0.25
+        });
+        TweenMax.staggerTo(".navIntro", 0.1, {
+        x: 0,
+        autoAlpha: 1,
+        ease: Sine.easeInOut,
+        delay: 0.25
+        }, 0.1);
+        TweenMax.to(".hero-text-box", 1, {
+        autoAlpha: 1,
+        delay: 0.5
+        });
+        TweenMax.to(bookCTA, 0.15, {
+        opacity: 1,
+        ease: Sine.easeInOut,
+        delay: .5
+        });
+        /*ABOUT PAGE*/
+        TweenMax.set([aboutHead, aboutSub, ".skill-icons"], {
+        autoAlpha: 0,
+        y: 5
+        });
+        /*WORK PAGE*/
+        TweenMax.set([workHead, workSub, ".work-buttons"], {
+        autoAlpha: 0,
+        y: 5
+        });
+        /*CONTACT PAGE*/
+        TweenMax.set([contactHead, contactSub, ".form-container"], {
+        autoAlpha: 0,
+        y: 5
+        });
+        /*STICKY NAVIGATION + PAGE ANIMATIONS*/
+        $("#about").waypoint(function(direction) {
+        if (direction == 'down') {
+        $('nav').addClass('sticky');
+        $('nav').removeClass('transparent');
+        TweenMax.to(aboutHead, 0.25, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut
+        });
+        TweenMax.to(aboutSub, 0.25, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut,
+        delay: 0.15
+        });
+        TweenMax.staggerTo(".skill-icons", 0.25, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut,
+        delay: .5
+        }, 0.15);
+        } else {
+        $('nav').removeClass('sticky');
+        $('nav').addClass('transparent');
+        }
+        }, {
+        offset: '140px;'
+        });
+        $("#work").waypoint(function(direction) {
+        if (direction == 'down') {
+        TweenMax.to(workHead, 0.25, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut
+        });
+        TweenMax.to(workSub, 0.25, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut,
+        delay: 0.25
+        });
+        TweenMax.staggerTo(".work-buttons", 0.25, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut,
+        delay: 0.5
+        }, 0.15);
+        }
+        }, {
+        offset: '140px;'
+        });
+        $("#contact").waypoint(function(direction) {
+        if (direction == 'down') {
+        TweenMax.to(contactHead, 0.5, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut
+        });
+        TweenMax.to(contactSub, 0.5, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut,
+        delay: 0.25
+        });
+        TweenMax.to(".form-container", 0.5, {
+        autoAlpha: 1,
+        y: 0,
+        ease: Sine.easeInOut,
+        delay: 0.5
+        });
+        }
+        }, {
+        offset: '140px;'
+        });
+        };
+
+        
+
+        $("#about").waypoint(function(direction) {
+            if (direction == 'down') {
+            $('nav').addClass('sticky');
+            $('nav').removeClass('transparent');
+            } else {
+            $('nav').removeClass('sticky');
+            $('nav').addClass('transparent');
+            }
+            }, {
+            offset: '140px;'
+        });
+        /*SCROLL TO*/
+        $('#logo-container').click(function() {
+        $('html, body').animate({
+        scrollTop: $('header').offset().top
+        }, 1000);
+        });
+        $('.home-button').click(function() {
+        $('html, body').animate({
+        scrollTop: $('header').offset().top
+        }, 1000);
+        });
+        $('.about-button').click(function() {
+        $('html, body').animate({
+        scrollTop: $("#about").offset().top
+        }, 1000);
+        });
+        $('.work-button').click(function() {
+        $('html, body').animate({
+        scrollTop: $("#work").offset().top
+        }, 1000);
+        });
+        $('.hire-button').click(function() {
+        $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+        }, 1000);
+        });
+        /*MOBILE NAVIGATION*/
+        /*var nav = $('.sidenav');
+        var icon = $('.sidenav-trigger');
+        icon.click(function() {
+            nav.slideToggle(200);
+        });
+        nav.click(function() {
+            nav.slideToggle(0);
+            icon.show();
+        });*/
+        var $contactForm = $('#contact-form');
+        $contactForm.submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+        url: 'https://formspree.io/f/meqdrjpn',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        beforeSend: function() {
+        $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+        },
+        success: function(data) {
+        $contactForm.find('.alert--loading').hide();
+        $contactForm.append('<div class="alert alert--success">Message sent!</div>');
+        },
+        error: function(err) {
+        $contactForm.find('.alert--loading').hide();
+        $contactForm.append('<div class="alert alert--error">Oops, there was an error.</div>');
+        }
+        });
+        });
+        });
+        </script>
+        <header>
+            <nav class="transparent z-depth-0 pinned menu" data-target="menu">
+                <div class="nav-wrapper container">
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="#home" class="home-button">HOME</a></li>
+                        <li><a href="#about" class="about-button">ABOUT</a></li>
+                        <li><a href="#work" class="work-button">WORK</a></li>
+                        <li><a href="#contact" class="hire-button">HIRE ME</a></li>
+                    </ul>
+                    <a href="javascript:;" data-target="nav-mobile" class="sidenav-trigger">
+                        <i class="material-icons" id="hamburgerIcon">menu</i>
+                    </a>
+                    <a href="javascript:;" data-target="nav-mobile" class="sidenav-close">
+                        <i class="material-icons" id="closeIcon">close</i>
+                    </a>
+                    <a id="logo-container" href="#home" class="brand-logo">
+                        <img src="resources/img/Logo_Website%20Header.png" alt="Header Logo" class="logo">
+                    </a>
+                    <ul class="right hide-on-med-and-down main-nav" id="mainNav">
+                        <li><a href="javascript:;" class="home-button navIntro">Home</a></li>
+                        <li><a href="javascript:;" class="about-button navIntro">About</a></li>
+                        <li><a href="javascript:;" class="work-button navIntro">Work</a></li>
+                        <li><a href="javascript:;" class="hire-button navIntro">Contact</a></li>
+                        <li><a href="https://www.facebook.com/offlimitseventsvt" target="_blank" class="navIntro"><i class="ion-social-facebook icon-nav"></i></a></li>
+                        <li><a href="https://www.instagram.com/offlimits_events/" target="_blank" class="navIntro"><i class="ion-social-instagram icon-nav"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <div class="hero-text-box">
+                    <h1 id='distortion-text'></h1>
+                    <h1 class='whiteMain'>OFF LIMITS</h1>
+                    <a href="https://offlimitsexperience.setmore.com/desmond" target="_blank" id="bookCTA"><button class="button">Book Now</button></a>
+                </div>
+            </div>
+        </div>
+        <section id="about">
+            <div class="container">
+                <div class="section">
+                    <div class="row aboutMain">
+                        <h2 id="aboutHead">Step into the surreal.</h2>
+                        <p id="aboutSub">Off Limits is a creative agency specializing in interactive visual experiences that blur the lines between the senses. Blending projection, sound, and real-time interaction, Off Limits transforms reality into a surreal, ever-changing work of art. If you're looking to bring interactive art, projection mapping, or custom audiovisual environments to your own venue, event, or business, we can design and set up a unique experience tailored to your space.</p>
+                    </div>
+                    <!--   Icon Section   -->
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <div class="icon-block skill-icons">
+                                <h2 class="center icon-big"><i class="material-icons">mouse</i></h2>
+                                <h3 class="center skill-title">Projection Mapping</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="icon-block skill-icons">
+                                <h2 class="center icon-big"><i class="material-icons">code</i></h2>
+                                <h3 class="center skill-title">Sound Design</h3>
+                                <p>With a healthy balance of design aesthetic and bulletproof code, anything is possible. I'm proficient in HTML5, CSS3, and jQuery. I'm always willing to learn more!</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="icon-block skill-icons">
+                                <h2 class="center icon-big"><i class="material-icons">phone_iphone</i></h2>
+                                <h3 class="center skill-title">Interaction</h3>
+                                <p>Looking to layout a stellar experience through user research and intuitive interface design? I've got you covered. Sketches, wireframes, protoypes, and more.</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="icon-block skill-icons">
+                                <h2 class="center icon-big"><i class="material-icons">create</i></h2>
+                                <h3 class="center skill-title">Audiovisuals</h3>
+                                <p>It's always important to stick to your roots. With a background in drawing and fine arts, I can guarantee a beautiful outcome in every situation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <div class="container">
+                <div class="row">
+                    <h2 id="workHead">Under Contruction</h2>
+                    <p id="workSub">Here is some of the work we've done.</p>
+                </div>
+                
+                <div class="row grid">
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="case-study-01.html" class="tooltipped" data-position="top" data-tooltip="Dealer.com">
+                            
+                            <img src="resources/img/thumbnails/dealer.jpg" alt="Dealer.com" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="case-study-02.html" class="tooltipped" data-position="top" data-tooltip="Personal Identity">
+                            
+                            <img src="resources/img/thumbnails/personal-identity.jpg" alt="Personal Identity" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="http://tincture.design" target="_blank" class="tooltipped" data-position="top" data-tooltip="Tincture Design">
+                            
+                            <img src="resources/img/thumbnails/tincture.jpg" alt="Tincture Design" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="case-study-03.html" class="tooltipped" data-position="top" data-tooltip="Logo Work">
+                            
+                            <img src="resources/img/thumbnails/logo-work.gif" alt="Logo Work" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="https://www.flickr.com/photos/nhicksdesign/albums" target="_blank" class="tooltipped" data-position="top" data-tooltip="Photography">
+                            <img src="resources/img/thumbnails/photography.jpg" alt="Photography" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="https://dribbble.com/nhicksdesign" target="_blank" class="tooltipped" data-position="top" data-tooltip="UI Animations">
+                            
+                            <img src="resources/img/thumbnails/ui-ux.gif" alt="UI Animations" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="case-study-04.html" class="tooltipped" data-position="top" data-tooltip="Misanthropy">
+                            
+                            <img src="resources/img/thumbnails/misanthropy.jpg" alt="Misanthropy" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                    <div class="col s12 m6 l4 work-buttons">
+                        <a href="case-study-05.html" class="tooltipped" data-position="top" data-tooltip="Archives">
+                            <img src="resources/img/thumbnails/archive.jpg" alt="Archives" class="responsive-img card materialbox hoverable button-image" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2 id="contactHead">Make contact.</h2>
+                    <p id="contactSub">Feel free to reach out through the form below, or any of my social networks!</p>
+                </div>
+                <div class="form-container">
+                    <form id="contact-form" action="https://formspree.io/f/meqdrjpn" method="POST">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" cols="30" rows="6" placeholder="Message" required></textarea>
+                        <!-- CONFIG -->
+                        <input type="hidden" name="_subject" value="Subject">
+                        <input type="hidden" name="_cc" value="email@cc.com">
+                        <!-- /CONFIG -->
+                        <input class="submit" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer blue-grey darken-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                            <li><a class="white-text" href="https://www.facebook.com/nate.hicks" target="_blank">Facebook</a></li>
+                            <li><a class="white-text" href="https://www.linkedin.com/in/nate-hicks-a3196422/" target="_blank">LinkedIn</a></li>
+                            <li><a class="white-text" href="https://dribbble.com/nhicksdesign" target="_blank">Dribbble</a></li>
+                            <li><a class="white-text" href="https://github.com/nhicksdesign" target="_blank">Github</a></li>
+                            <li><a class="white-text" href="https://open.spotify.com/artist/0aQFiDkH1ofWOcuzXlr4wI?si=Bif510XpSP6SAoakjB6TZw" target="_blank">Spotify</a></li>
+                            <li><a class="white-text" href="https://soundcloud.com/user-565343076" target="_blank">SoundCloud</a></li>
+                            <li><a class="white-text" href="https://silencecastor.bandcamp.com/" target="_blank">BandCamp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright center">
+                <div class="container">
+                    &copy;Copyright 2025 Off Limits, LLC. All Rights Reserved
+                </div>
+            </div>
+        </footer>
+    </body>
