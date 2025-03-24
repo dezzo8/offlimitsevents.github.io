@@ -28,6 +28,8 @@ window.onload = function() {
 
       scope.appendTo(elem);
       document.onmousemove = moveIt;
+
+
     function moveIt(event) {
       material.uniforms.uRotation.value = (event.clientX * .25);
       material.uniforms.uOffset.value = (event.clientY * 0.00025);
