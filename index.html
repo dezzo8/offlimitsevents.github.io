@@ -98,6 +98,7 @@
         var mainLogo = $("#logo-container");
         var isMobile = false;
         TweenMax.set(closeIcon, {autoAlpha:0})
+        TweenMax.set("#distortion-text", {opacity:0})
         if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         isMobile = true;
         mainLogo.mouseover(function(){
@@ -126,6 +127,7 @@
         autoAlpha: 0,
         opacity: 0
         });
+        TweenMax.to("#distortion-text", 0.25, {opacity:1})
         TweenMax.to("#logo-container", 0.25, {
         y: 0,
         autoAlpha: 1,
@@ -345,7 +347,6 @@
             <div class="container">
                 <div class="hero-text-box">
                     <h1 id='distortion-text'></h1>
-                    <h1 class='whiteMain'>OFF LIMITS</h1>
                     <a href="https://offlimitsexperience.setmore.com/desmond" target="_blank" id="bookCTA"><button class="button">Book Now</button></a>
                 </div>
             </div>
