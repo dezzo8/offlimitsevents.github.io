@@ -1,5 +1,6 @@
 window.onload = function() {
 
+      function mainBlotter() {
       var text = new Blotter.Text("OFF LIMITS", {
          family : "'Montserrat', serif",
          fill : "#000",
@@ -34,6 +35,35 @@ window.onload = function() {
       material.uniforms.uRotation.value = (event.clientX * .25);
       material.uniforms.uOffset.value = (event.clientY * 0.00025);
     }
+  };
+   function secondBlotter() {
+      var text2 = new Blotter.Text("Step into the surreal.", {
+         family : "'Montserrat', serif",
+         fill : "#fff",
+         size : 80,
+         weight : 700,
+
+        });
+
+      var material = new Blotter.SlidingDoorMaterial();
+
+      material.uniforms.uDivisions.value = 2;
+      material.uniforms.uAnimateHorizontal.value = 1.0;
+      material.uniforms.uSpeed.value = 0.25;
+
+
+      var blotter = new Blotter(material, {
+        texts : text2
+      });
+
+      var elem = document.getElementById("aboutHead");
+      var scope = blotter.forText(text2);
+
+      scope.appendTo(elem);
+
+  };
+  mainBlotter();
+  secondBlotter();
 
 };
 
