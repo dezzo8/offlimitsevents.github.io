@@ -930,8 +930,15 @@ fieldset {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     nav .brand-logo {
-        position: inherit;
+        position: relative !important;
         left: 5% !important;
+        width: 100px;
+
+    }
+    nav .brand-logo svg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
     }
     nav .sidenav-trigger i,
     nav .sidenav-close i {
