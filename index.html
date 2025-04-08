@@ -157,12 +157,12 @@
         y: 5
         });
         /*WORK PAGE*/
-        TweenMax.set([workHead, workSub, ".work-buttons"], {
+        TweenMax.set([workHead, workSub], {
         autoAlpha: 0,
         y: 5
         });
         /*CONTACT PAGE*/
-        TweenMax.set([contactHead, contactSub, ".form-container"], {
+        TweenMax.set([contactHead, contactSub, ".bio-container"], {
         autoAlpha: 0,
         y: 5
         });
@@ -231,7 +231,7 @@
         ease: Sine.easeInOut,
         delay: 0.25
         });
-        TweenMax.to(".form-container", 0.5, {
+        TweenMax.to(".bio-container", 0.5, {
         autoAlpha: 1,
         y: 0,
         ease: Sine.easeInOut,
@@ -427,12 +427,39 @@
             </section>
             <section id="contact">
                 <div class="container">
-                    <div class="row">
-                        <h2 id="contactHead">Under Construction</h2>
-                        <p id="contactSub">This section is being worked on.</p>
-                    </div>
-                    <div class="form-container">
-                        
+                    <div class="section">
+                        <div class="row">
+                            <h2 id="contactHead">Get in touch.</h2>
+                            <p id="contactSub">We're a small team, but if you have a question or want to work with us,<br>we should have no problem getting back to you quickly.</p>
+                        </div>
+                        <div class="row bio-container">
+                            <div class="col s12 m3">
+                                <div class="left row imageCircle">
+                                <video id="desPortrait" class="portraits" src="resources/img/desPortrait.mp4" autoplay="true" loop="true">
+                                </div>
+                                <div class="left bio">
+                                    <h4 class="left-align names">Desmond O'Neill</h4>
+                                    <h5 class="left-align">Owner / Lead Creative</h5>
+                                    <p class="left-align">With years of experience in audio visuals,<br>analog video synthesis, and music production,<br>Desmond is the beating heart of Off Limits.</p>
+                                    <h5 class="left-align">
+                                        <a href="mailto:nhicksdesign@gmail.com" >Email Me</a>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col s12 m3">
+                                <div class="right row imageCircle">
+                                    <video id="natePortrait" class="portraits" src="resources/img/natePortrait.mp4" autoplay="true" loop="true">
+                                </div>
+                                <div class="right bio">
+                                    <h4 class="right-align names">Nate Hicks</h4>
+                                    <h5 class="right-align">Designer / Creative</h5>
+                                    <p class="right-align">Coming from the Graphic Design world,<br>Nate works to help fine tune aesthetics<br>and co-create lush visuals.</p>
+                                    <h5 class="right-align">
+                                        <a href="mailto:nhicksdesign@gmail.com" >Email Me</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

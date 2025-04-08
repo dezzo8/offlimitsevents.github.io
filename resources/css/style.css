@@ -510,354 +510,45 @@ h3 {
 }
 
 #contact h2,
+#contact h3,
+#contact h4 {
+    color: #000;
+    font-weight: 800;
+    font-family: Montserrat;
+}
+
+#contact h5 {
+    color: #000;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
 #contact p {
-    color: #2c3e50;
-}
-
-
-/* CONTACT FORM */
-
-.form-container {
-    position: relative;
-
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
-#contact-form textarea,
-#contact-form button[type="submit"] {
-    font: 400 12px/16px "Montserrat", Helvetica, Arial, sans-serif;
-}
-
-#contact-form {
-    padding: 25px;
-    margin: 150px 0;
-
-    font-family: "Montserrat", sans-serif;
-
-    background: #ecf0f1;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
-}
-
-#contact-form h3 {
-    display: block;
-    margin-bottom: 10px;
-
-    font-size: 30px;
-    font-weight: 300;
-}
-
-#contact-form h4 {
-    display: block;
-    margin: 5px 0 15px;
-
-    font-size: 13px;
+    color: #000;
     font-weight: 400;
+    font-family: Montserrat;
 }
 
-fieldset {
+.imageCircle {
+    width:350px;
+    height:350px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.portraits {
     width: 100%;
-    min-width: 100%;
-    padding: 0;
-    margin: 0 0 10px;
+    margin-top: -10px;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
-#contact-form textarea {
-    padding: 10px 0;
+#desPortrait {
+    width: 110%;
+    margin-top:-20px;
+    margin-left: -20px;
 }
 
-#contact-form input[type="text"]:hover,
-#contact-form input[type="email"]:hover,
-#contact-form input[type="tel"]:hover,
-#contact-form input[type="url"]:hover,
-#contact-form textarea:hover {
-    -webkit-transition: border-color .3s ease-in-out;
-       -moz-transition: border-color .3s ease-in-out;
-            transition: border-color .3s ease-in-out;
-
-    border-bottom: 1px solid #c0392b;
-}
-
-#contact-form textarea {
-    padding-left: 0;
-    margin-bottom: 40px;
-    box-sizing: initial;
-
-    border-top: none;
-    border-right: none;
-    border-bottom: 1px solid #000;
-    border-left: none;
-}
-
-#contact-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin: 0 0 5px;
-
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-
-    cursor: pointer;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #ecf0f1;
-    border: none;
-    background: #2c3e50;
-}
-
-#contact-form input[type="submit"]:hover {
-    -webkit-transition: background .3s ease-in-out;
-       -moz-transition: background .3s ease-in-out;
-            transition: background-color .3s ease-in-out;
-
-    background: #c0392b;
-}
-
-#contact-form input[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .5);
-}
-
-#contact-form input:focus,
-#contact-form textarea:focus {
-    border-bottom: 1px solid #c0392b;
-    outline: none;
-    box-shadow: none;
-}
-
-::-webkit-input-placeholder {
-    color: #888;
-}
-
-:-moz-placeholder {
-    color: #888;
-}
-
-::-moz-placeholder {
-    color: #888;
-}
-
-:-ms-input-placeholder {
-    color: #888;
-}
-
-
-/* CASE STUDIES */
-
-.write-up {
-    margin-top: 150px !important;
-    margin-bottom: 150px !important;
-}
-
-.case3 .write-up {
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
-}
-
-.write-up .description {
-    display: flex;
-    flex-direction: column;
-
-    align-content: middle;
-}
-
-.case1 .write-up .description {
-    padding: 30px !important;
-    margin-top: 40%;
-}
-
-.case3 .write-up .description,
-.case4 .write-up .description {
-    padding: 30px !important;
-}
-
-.write-up .description h4 {
-    font-size: 24px;
-
-    letter-spacing: 2px;
-}
-
-.write-up .description h4,
-.write-up .description p {
-    font-family: "Montserrat", "Arial", sans-serif;
-
-    text-align: left !important;
-
-    color: #2c3e50 !important;
-}
-
-.case1,
-.case1 .sticky {
-    background-color: #c0392b !important;
-}
-
-.case1 #about {
-    background-color: #ecf0f1 !important;
-}
-
-.case2,
-.case2 .sticky {
-    background-color: #000 !important;
-}
-
-.case2 .main-nav li a:hover,
-.case2 .main-nav li a:active {
-    transition: color .5s;
-    transform-origin: center;
-
-    color: #ff7a01 !important;
-
-    -webkit-text-stroke-color: #ff7a01 !important;
-    -webkit-text-stroke-width: 1px;
-}
-
-.case2 #about {
-    background-color: #ff7a01 !important;
-}
-
-.case2 #about h2,
-.case2 #about h3,
-.case2 #about p {
-    color: #fff !important;
-}
-
-.case2 figure {
-    position: relative;
-
-    padding: 20px !important;
-    margin: 0 auto 0 auto !important;
-
-    cursor: pointer;
-}
-
-.case2 figure:before {
-    position: absolute;
-    top: 39%;
-    left: 50%;
-
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
-
-    font-family: "Ionicons";
-    font-size: 19px;
-    line-height: 45px;
-
-    content: "\f215";
-    text-align: center;
-
-    color: #f5f7fa;
-    border: 3px solid rgba(255, 255, 255, .7);
-    border-radius: 360px;
-    background-color: rgba(204, 209, 217, .3);
-}
-
-.case2 figure.play:before {
-    display: none;
-}
-
-.case3,
-.case3 .sticky {
-    background-color: #2c3e50 !important;
-}
-
-.case3 .main-nav li a:hover,
-.case3 .main-nav li a:active {
-    transition: color .5s;
-    transform-origin: center;
-
-    color: #fdcb6e !important;
-
-    -webkit-text-stroke-color: #fdcb6e !important;
-    -webkit-text-stroke-width: 1px;
-}
-
-.case3 #about {
-    background-color: #ecf0f1 !important;
-}
-
-.case4,
-.case4 .sticky {
-    background-color: #190b03 !important;
-}
-
-.case4 .main-nav li a:hover,
-.case4 .main-nav li a:active {
-    transition: color .5s;
-    transform-origin: center;
-
-    color: #c8c692 !important;
-
-    -webkit-text-stroke-color: #c8c692 !important;
-    -webkit-text-stroke-width: 1px;
-}
-
-.case4 #about {
-    background-color: #c8c692 !important;
-}
-
-.case4 #about h2,
-.case4 #about h3,
-.case4 #about p {
-    color: #190b03 !important;
-}
-
-.case5,
-.case5 .sticky {
-    background-color: #fdcb6e !important;
-}
-
-.case5 #about {
-    background-color: #ecf0f1 !important;
-}
-
-.case5 h1,
-.case5 h3 {
-    color: #2c3e50 !important;
-}
-
-.case-points {
-    width: 100%;
-    margin-top: 100px;
-}
-
-.case-points i {
-    font-size: 800%;
-
-    color: white;
-}
-
-.case-study {
-    width: 60%;
-}
-
-.case-study .row {
-    margin-top: 36px !important;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-
-.type-pages {
-    padding: 40px !important;
-}
-
-.first-description {
-    width: 60%;
-    margin-top: 520px;
-}
-
-.mockup {
-    margin-top: -240px;
+#natePortrait {
+    margin-top:-20px;
 }
 
 
