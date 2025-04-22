@@ -529,6 +529,10 @@ h3 {
     font-family: Montserrat;
 }
 
+.bio {
+    padding-top: 50px !important;
+}
+
 .imageCircle {
     width:350px;
     height:350px;
@@ -547,6 +551,18 @@ h3 {
     margin-left: -20px;
 }
 
+#desBlurb,
+#nateBlurb {
+    margin-top: 20px !important;
+}
+
+#desParagraph,
+#desEmail,
+#nateParagraph,
+#nateEmail {
+    margin-top: 15px !important;
+}
+
 #natePortrait {
     margin-top:-20px;
 }
@@ -555,8 +571,10 @@ h3 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     nav .brand-logo {
-        position: inherit;
         left: 10% !important;
+        width:50px !important;
+        margin-left: 20px !important;
+        padding-top: 40px !important;
     }
     
     nav .sidenav-trigger i,
@@ -567,8 +585,9 @@ h3 {
     nav .sidenav-close {
         margin-top: 35px !important;
     }
-    nav .sticky .brand-logo {
-        width: 20px !important;
+    .sticky .brand-logo {
+        width: 40px !important;
+        padding-top: 15px !important;
     }
     .sticky .sidenav-trigger,
     .sticky .sidenav-close {
@@ -581,7 +600,7 @@ h3 {
         line-height: 48px;
     }
     h1 {
-        font-size: 250% !important;
+        font-size: 350% !important;
     }
     h3 {
         font-size: 110% !important;
@@ -606,6 +625,15 @@ h3 {
     .write-up .description h4,
     .write-up .description p {
         text-align: center !important;
+    }
+
+    .icon-block {
+        padding: 20px 0 !important;
+    }
+
+    .imageCircle {
+        width:250px !important;
+        height:250px !important;
     }
 }
 
